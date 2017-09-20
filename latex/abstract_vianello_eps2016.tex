@@ -1,0 +1,30 @@
+\documentclass{epsconf}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage[style=phys,articletitle=false,defernumbers=true,maxnames=2,firstinits=true,uniquename=init,backend=bibtex8,arxiv=abs,mcite]{biblatex}
+\bibliography{biblio}
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{in}\intitlepunct}}}
+\renewcommand\refname{\vskip -1cm}
+\DefineBibliographyStrings{english}{%
+  references = {},
+}
+%% to set line space in bibliography
+\usepackage{setspace}
+\usepackage{multicol}
+\title{SOL transport and filamentary dynamics in tokamaks: from L to
+  inter-ELM filaments in high density regimes}
+\author{N. Vianello$^{1}$}
+\institute{$^{1}$ Consorzio RFX (CNR, ENEA, INFN, Università di Padova, Acciaierie Venete SpA), C.so Stati Uniti 4, 35127, Padova, Italy}
+\begin{document}
+\maketitle
+
+\begingroup
+\setstretch{0.9}
+\printbibliography
+\endgroup
+
+\end{document}
